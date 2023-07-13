@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assetsForm/images/users-rectangle-solid.svg">
+    <link rel="stylesheet" href="assetsForm/styleForm.css">
+    <link rel="stylesheet" href="styleReset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <span class="carregamento"></span>
+    <form action="">
+        <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+            <span class="spanStyle">Nome</span>
+        </fieldset>
+        <fieldset>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" min="0" required>
+            <span class="spanStyle">Idade</span>
+        </fieldset>
+        <section class="fieldButtons">
+            <button type="reset" class="btn">Apagar</button>
+            <button type="submit" id="enviar" class="btn">Enviar</button>
+        </section>
+    </form>
+
+    <div class="modal">
+        <section class="popup popupCircle">
+            <div class="circle"></div>            
+        </section>
+        <section class="popup popupConfirm">
+            <span class="aviso">Enviado</span>
+            <button class="btn" id="btnOk">Ok</button>
+        </section>
+    </div>
+    
+    <script src="assetsForm/scriptForm.js"></script>
+</body>
+</html>
